@@ -12,17 +12,6 @@ sudo apt update &&
 
 sudo apt install python3 python-pip git vim kdenlive gitkraken inkscape gnome-tweaks build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
 
-## Instalando pacotes Snap ##
-
-sudo snap install atom --classic &&  
-sudo snap install spotify &&
-sudo snap install wps-office-multilang && 
-sudo snap install brave &&
-
-## Adicionando repositório Flathub ##
-
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && 
-
 ## Softwares que precisam de download externo ##
 
 cd ~/Downloads/ && wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i *.deb &&

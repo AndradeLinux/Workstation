@@ -18,8 +18,35 @@ cd ~/Downloads/ && wget -c https://dl.google.com/linux/direct/google-chrome-stab
 
 ##Softwares alternativos Windows##
 
-##GIMP e PhotoGIMP
-flatpak install flathub org.gimp.GIMP -y && wget -c https://doc-0s-1g-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/0v83rmt4mij9897co9ufvor2r1jcj1am/1567965600000/07452089978596344616/*/12i-ihCDSZelx30-oNHJaKAzUei1etsbS?e=download && unzip 12i-ihCDSZelx30-oNHJaKAzUei1etsbS?e=download && cd "PHOTOGIMP V2018 - DIOLINUX" && cd "PATCH" && mkdir -p /home/$USER/.var/app/org.gimp.GIMP/config/GIMP/2.10/ && cp -R * /home/$USER/.var/app/org.gimp.GIMP/config/GIMP/2.10/ &&
+## Instalando Flatpak ##
+
+sudo apt install flatpak -y &&
+sudo apt install gnome-software-plugin-flatpak -y &&
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y &&
+
+## Instalando Pycharm ##
+
+flatpak install flathub com.jetbrains.PyCharm-Community -y &&
+
+## GIMP ##
+
+flatpak install flathub org.gimp.GIMP -y &&
+
+##Instalando driver wi-fi ##
+
+sudo apt update &&
+sudo apt install dkms -y &&
+git clone -b v5.6.4.2 https://github.com/aircrack-ng/rtl8812au.git &&
+cd rtl8812au &&
+sudo make dkms_install -y &&
+
+## Instalando bluetooth ##
+
+sudo apt install bluetooth -y &&
+
+## Instalando Gnome-software -y ##
+
+sudo apt install gnome-software -y &&
 
 ## Atualização do sistema ##
 
@@ -28,3 +55,7 @@ sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt
 #Fim do Script ##
 
 echo "Finalizado"
+
+## Reboot ##
+
+reboot &&

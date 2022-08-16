@@ -12,17 +12,13 @@ sudo apt update &&
 
 sudo apt install python3 python-pip git vim kdenlive gitkraken inkscape gnome-tweaks build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
 
+## Instalando repositótio Flatpak ##
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y &&
+
 ## Softwares que precisam de download externo ##
 
 cd ~/Downloads/ && wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i *.deb &&
-
-##Softwares alternativos Windows##
-
-## Instalando Flatpak ##
-
-sudo apt install flatpak -y &&
-sudo apt install gnome-software-plugin-flatpak -y &&
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y &&
 
 ## Instalando Pycharm ##
 

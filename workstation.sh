@@ -14,17 +14,25 @@ cd &&
 
 sudo apt install python3 python-pip git vim gnome-tweaks build-essential libssl-dev flatpak gnome-software-plugin-flatpak gnome-software -y &&
 
-## Instalando repositótio Flatpak ##
+## Instalando repositótios ##
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
+
+sudo add-apt-repository ppa:daniruiz/flat-remix &&
+
+## Instalando tema Flat-Remix ##
+
+sudo apt install flat-remix -y &&
+
+sudo apt install flat-remix-_____ -y && ## Adicionar 'gtk' ou 'gnome' após o traço. ##
 
 ## Softwares que precisam de download externo ##
 
 cd ~/Downloads/ && wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i *.deb &&
 
-## Instalando apps flatpak ##
-
 cd &&
+
+## Instalando apps flatpak ##
 
 flatpak install flathub com.jetbrains.PyCharm-Community -y &&
 
@@ -35,6 +43,8 @@ flatpak install flathub com.axosoft.GitKraken -y &&
 flatpak install flathub com.stremio.Stremio -y &&
 
 flatpak install flathub com.notepadqq.Notepadqq -y &&
+
+sudo apt flat-remix-gtk
 
 ##Instalando driver wi-fi ##
 

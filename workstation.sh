@@ -30,6 +30,8 @@ sudo apt install flat-remix-_____ -y && ## Adicionar 'gtk' ou 'gnome' após o tr
 
 cd ~/Downloads/ && wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i *.deb &&
 
+wget -c https://code.visualstudio.com/docs/?dv=linux64_deb -i *.deb &&
+
 cd &&
 
 ## Instalando apps flatpak ##
